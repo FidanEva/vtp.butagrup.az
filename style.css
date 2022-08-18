@@ -1,0 +1,496 @@
+.body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    background: linear-gradient(90.04deg, #404094 50.42%, rgba(255, 255, 255, 0) 99.98%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 20px;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.heading>a img {
+    width: 10rem;
+    filter: brightness(0) invert(1);
+    margin: 0.8rem;
+}
+
+.container {
+    margin-top: 8%;
+    margin-bottom: 120px;
+    min-height: 100%;
+}
+
+.footer {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(70, 70, 255, 0) 0%, rgba(64, 64, 148, 1) 100%);
+    border-radius: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .logo {
+    filter: brightness(0) invert(1) !important;
+    width: 10rem;
+}
+
+.footer img {
+    filter: brightness(0) invert(1);
+    margin: 5px;
+    bottom: 0px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.social img {
+    width: 3rem;
+}
+
+.main {
+    position: absolute;
+    width: 100%;
+    height: 38px;
+    top: 235px;
+    position: absolute;
+    background: #404094;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.dots {
+    position: absolute;
+    top: 45px;
+    left: 10px;
+}
+
+.line {
+    display: none;
+}
+
+.image {
+    position: relative;
+}
+
+.image .icon {
+    transition: all 300ms ease;
+}
+
+.icon {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    width: 15%;
+    filter: brightness(0) invert(1);
+}
+
+.image:hover .icon {
+    filter: brightness(0.4) invert(1);
+}
+
+@media only screen and (max-width: 770px) {
+    div p {
+        min-height: 100px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .heading {
+        border-radius: 10px;
+    }
+
+    .heading img {
+        width: 115px;
+        margin: 10px !important;
+    }
+
+    .main {
+        display: none;
+    }
+
+    .main .dots {
+        display: none;
+    }
+
+    .line {
+        display: block;
+        width: 100vw;
+        height: 20%;
+        top: 40%;
+        left: -9rem;
+        position: absolute;
+        background: #404094;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+    }
+
+    .container {
+        margin-top: 35px;
+        margin-bottom: -6rem;
+    }
+
+    .container p {
+        text-align: center;
+    }
+
+    .col-md-3 {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+        padding-top: 1rem !important;
+        padding-bottom: 2.5rem !important;
+    }
+
+    .image .icon {
+        filter: brightness(0.4) invert(1);
+    }
+
+    .footer {
+        height: 200px;
+        background: linear-gradient(360deg, #404094 0%, rgba(64, 64, 148, 0) 100%);
+        bottom: 0;
+        border-radius: 0;
+    }
+
+    .footer-logo {
+        display: none;
+    }
+
+    .footer .footer-div {
+        justify-content: center !important;
+    }
+
+    .footer .social {
+        margin-top: 120px;
+        justify-content: center;
+    }
+}
+
+/* Advertisement */
+a {
+    text-decoration: none !important;
+}
+
+.rainbow-box {
+    background-image: url("Frame 12.png");
+    height: 350px;
+    width: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover !important;
+    background-size: cover;
+    box-shadow: 78rem 0rem 2rem #b827fc, 61rem 0rem 2rem #2c90fc, 31rem 0rem 3rem #b8fd33, 14rem 0rem 3rem #fec837, 1rem 0rem 2rem #fd1892;
+}
+
+.tel {
+    position: relative;
+
+}
+
+.small-img img {
+    position: absolute;
+    width: 5rem !important;
+
+}
+
+@media only screen and (max-device-width:575px) {
+    .d-sm-none {
+        margin-right: 5rem;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .desktop {
+        display: none !important;
+    }
+
+    .mobile {
+        display: block !important;
+    }
+}
+
+#animation {
+    position: absolute;
+    width: 12%;
+    left: 87.2%;
+    bottom: 65%;
+    animation: seide 3s infinite linear;
+    transition: .5s ease-in-out;
+    filter: drop-shadow(20px 20px 30px rgba(0, 0, 0, 0.45));
+    transform: rotate(-15deg);
+}
+
+@keyframes animationname {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(10px);
+    }
+
+    75% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#computer {
+    position: absolute;
+    width: 13%;
+    left: 65%;
+    bottom: 70%;
+    filter: drop-shadow(20px 20px 30px rgba(0, 0, 0, 0.45));
+    transform: rotate(22.65deg);
+}
+
+#computer {
+    animation: animationname 2s infinite linear;
+    /*animation: animation-name animation-duration animation-direction animation-iteration-count */
+    transition: .5s ease-in-out;
+}
+
+@keyframes animationname {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(7px);
+    }
+
+    75% {
+        transform: translateY(-7px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#carusel {
+    transform: rotate(30deg);
+    position: absolute;
+    width: 14%;
+    left: 78%;
+    top: 55% !important;
+    animation: seide 4s infinite linear;
+    transition: .5s ease-in-out;
+    filter: drop-shadow(20px 20px 30px rgba(0, 0, 0, 0.45));
+}
+
+@keyframes seide {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(10px);
+    }
+
+    75% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#computer {
+    position: absolute;
+    width: 14%;
+    left: 71%;
+    bottom: 55%;
+    filter: drop-shadow(20px 20px 30px rgba(0, 0, 0, 0.45));
+    transform: rotate(22.65deg);
+}
+
+#carusel {
+    transform: rotate(30deg);
+    position: absolute;
+    width: 12%;
+    left: 81%;
+    top: 48%;
+    animation: seide 4s infinite linear;
+    transition: .5s ease-in-out;
+    filter: drop-shadow(20px 20px 30px rgba(0, 0, 0, 0.45));
+}
+
+
+#task {
+    width: 6rem !important;
+    right: 76%;
+    bottom: 27%;
+
+    filter: drop-shadow(0px 13px 39px rgba(0, 0, 0, 0.5));
+    transform: rotate(20.3deg);
+    animation: seide 3s infinite linear;
+    transition: .5s ease-in-out;
+
+    filter: drop-shadow(20px 20px 30px rgba(0, 0, 0, 0.45));
+    transform: rotate(-15deg);
+}
+
+@keyframes animationname {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(10px);
+    }
+
+    75% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#time {
+    right: 81%;
+    top: 75%;
+    filter: drop-shadow(0px 13px 39px rgba(0, 0, 0, 0.5));
+    transform: rotate(-30deg);
+    animation: animationname 2s infinite linear;
+    transition: .5s ease-in-out;
+}
+
+@keyframes animationname {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(7px);
+    }
+
+    75% {
+        transform: translateY(-7px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+#gant {
+    left: 80%;
+    top: 76%;
+    filter: drop-shadow(0px 13px 39px rgba(0, 0, 0, 0.5));
+    transform: rotate(-15deg);
+    animation: seide 3s infinite linear;
+    transition: .5s ease-in-out;
+}
+
+@keyframes animationname {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(10px);
+    }
+
+    75% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#bag {
+    left: 6%;
+    bottom: 74%;
+    filter: drop-shadow(0px 13px 39px rgba(0, 0, 0, 0.5));
+    transform: rotate(19.84deg);
+    animation: animationname 2s infinite linear;
+    transition: .5s ease-in-out;
+}
+
+@keyframes animationname {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(7px);
+    }
+
+    75% {
+        transform: translateY(-7px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#comput {
+    right: 6%;
+    bottom: 74%;
+    filter: drop-shadow(0px 13px 39px rgba(0, 0, 0, 0.5));
+    transform: rotate(-17.27deg);
+    animation: seide 3s infinite linear;
+    transition: .5s ease-in-out;
+}
+
+@keyframes animationname {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(10px);
+    }
+
+    75% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#diogram {
+    position: absolute;
+    left: 77%;
+    bottom: 34%;
+    filter: drop-shadow(0px 13px 39px rgba(0, 0, 0, 0.5));
+    transform: rotate(3.77deg);
+    animation: animationname 2s infinite linear;
+    transition: .5s ease-in-out;
+}
+
+@keyframes animationname {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(7px);
+    }
+
+    75% {
+        transform: translateY(-7px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+/* Advertisement end*/
